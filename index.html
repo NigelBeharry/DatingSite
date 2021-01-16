@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dating Site</title>
+  <title>Dating Form</title>
 </head>
 
 <style>
@@ -59,11 +59,14 @@ input[type="submit"]{
   padding: 12px;
 }
 
+ div:hover{
+   color:blue;
+ }
 
 </style>
 
 <body>
-  <h1> Enter Your Details For Our Dating Website</h1>
+  <h1>Enter Your Details For Our Dating Website</h1>
   <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
     enctype="multipart/form-data">
     <fieldset>
@@ -82,7 +85,7 @@ input[type="submit"]{
       </div>
 
       <div>
-        <label for="">Gender:</label>
+        <label>Gender:</label>
         <input type="radio" name="gender" id="woman" value="woman" required />
         <label for="woman">Woman</label>
         <input type="radio" name="gender" id="man" value="man" required />
